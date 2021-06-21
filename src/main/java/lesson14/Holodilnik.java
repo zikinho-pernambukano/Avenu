@@ -1,6 +1,6 @@
 package lesson14;
 
-import java.util.HashMap;
+import java.util.*;
 
 public class Holodilnik {
 
@@ -42,4 +42,24 @@ public class Holodilnik {
         products.put(product, currentValue - value);
     }
 
-}
+    public void printAllWeightProduct() {
+        int summ = 0;
+        for (Integer i : products.values()) {
+            summ = summ + i;
+        }
+        System.out.println(summ);
+    }
+
+    public void minValue(){
+        System.out.println(Collections.min(products.values()));
+    }
+
+    public void sortName(){
+        TreeMap<String,Integer> sort= new TreeMap<String,Integer>(products);
+        for (String s:sort.keySet()) {
+            System.out.println(s);
+        }
+        }
+    }
+
+
