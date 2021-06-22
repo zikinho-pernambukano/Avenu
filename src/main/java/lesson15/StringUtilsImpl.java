@@ -7,20 +7,12 @@ public class StringUtilsImpl implements StringUtils {
         double s = Integer.parseInt(number1);
         double a = Integer.parseInt(number2);
         double result = 0;
-
-        try {
-            if (a==0){
-                throw new ArithmeticException("если number2 равно нулю");
-
-        }
-            result=s/a;
-
-        }catch (ArithmeticException e){
-            System.out.println("если number2 равно нулю");
+        if (a == 0) {
+            throw new ArithmeticException("если number2 равно нулю");
         }
 
 
-            return s/a;
+        return s / a;
 
 
     }
