@@ -27,14 +27,14 @@ public class Main {
             String s = null;
             System.out.println(s.length());
         } catch (NullPointerException e) {
-            System.out.println("NullPointerException..");
+            e.printStackTrace();
         }
 
         try {
             int s = Integer.parseInt("XYZ");
             System.out.println(s);
         } catch (NumberFormatException e) {
-            System.out.println("Number format exception occurred");
+            e.printStackTrace();
         }
 
     }
